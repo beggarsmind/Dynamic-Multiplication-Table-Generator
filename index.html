@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dynamic Multiplication Table Generator" />
+    <meta name="beggars_mind" content="Beggar's Mind" />
+    <title>Dynamic Multiplication Table Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dynamic Multiplication Table Generator</h1>
+    </header>
+    <main>
+      <section class="form-container">
+        <label for="tableNumber">Enter Table Number:</label>
+        <input
+          type="number"
+          id="tableNumber"
+          aria-label="Enter Table Number"
+          required
+        />
+
+        <label for="startRange" class="start01"> Start Range:</label>
+        <input
+          type="number"
+          id="startRange"
+          aria-label="Enter start range"
+          required
+        />
+        <label for="endRange" class="endo1">End Range :</label>
+        <input
+          type="number"
+          id="endRange"
+          aria-label="Enter end range"
+          required
+        />
+        <button id="generateTable">Generate Table</button>
+        <button id="downloadCSV">Download CSV File</button>
+      </section>
+      <section>
+        <div id="outputTable" tabindex="0" aria-live="polite"></div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Re-Designed By Ranjithkumar.R (
+        <a href="https://github.com/beggarsmind">Beggar's Mind</a> )
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
